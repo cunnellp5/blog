@@ -1,9 +1,0 @@
----
-layout: post
-title:  "First"
-date:   2026-09-08 16:59:32 -0600
-categories:
----
-First blog post
-
-For now, this should explore tech topics only
