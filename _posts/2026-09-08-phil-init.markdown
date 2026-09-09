@@ -2,6 +2,8 @@
 layout: post
 title:  "Hello friend!"
 date:   2026-09-08 16:59:32 -0600
-categories: phil init
+categories:
 ---
 First blog post
+
+For now, this should explore tech topics only
