@@ -1,0 +1,9 @@
+---
+---
+@import "minima"; /* or whatever your theme name is */
+
+/* Your custom CSS here */
+.social-media-list > li > a {
+    display: flex;
+    align-items: center;
+}
