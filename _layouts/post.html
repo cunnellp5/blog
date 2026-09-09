@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+            </time>
+            • {% include read-time.html content=page.content %}
+
+            {%- if page.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+                    itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}
+        </p>
+    </header>
+
+        {% if page.toc %}
+        {% assign h2_nodes = content | split: '<h2 id="' %}
+        {% if h2_nodes.size > 1 %}
+        <nav class=" table-of-contents">
+            <p class="toc-title">Table of Contents</p>
+            <ul>
+                {% for node in h2_nodes offset:1 %}
+                {% assign id = node | split: '"' | first %}
+                {% assign title = node | split: '</h2' | first | split: '>' | last | strip_html %} <li>
+                <a href="#{{ id }}">{{ title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        {% endif %}
+        {% endif %}
+
+        <div class="post-content e-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+
+        {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+        {%- endif -%}
+
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

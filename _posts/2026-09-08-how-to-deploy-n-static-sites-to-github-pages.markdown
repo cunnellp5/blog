@@ -3,21 +3,15 @@ layout: post
 title:  "How to deploy multiple static sites to GitHub Pages"
 date:   2026-09-08 20:33:10 -0600
 categories: tech
+toc: true
 ---
 
-[Prerequisites](#prerequisites)\
-[Step 1 - Configure dns](#configure-dns)\
-[Step 2 - Create github repo](#create-github-repo)\
-[Step 3 - Add CNAME](#add-CNAME)\
-[Step 4 - Configure gh pages](#configure-gh-pages)
+This post is a guide on hosting multiple subdomains, each backed by a dedicated GitHub repository, all running under a single custom domain.
 
-> ℹ️ This post is a guide on hosting multiple subdomains, each backed by a dedicated GitHub repository, all running under a single custom domain.
-{: .notice--info}
-
-
-## Prerequisites {#prerequisites}
+> **Prerequisites**
 * A custom domain already purchased and managed via a DNS provider (e.g., `philcunnell.dev`).
 * A static site built using anything (Jekyll, React, Svelte, or plain HTML/CSS/JS) with an `index.html` entry point at the root.
+{: .notice--info}
 
 ## Step 1: Configure Your DNS Records {#configure-dns}
 1. Log into your domain registrar (such as GoDaddy, Cloudflare, etc.) and open the **DNS Management** section for your domain.

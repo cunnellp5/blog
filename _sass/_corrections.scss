@@ -3,3 +3,16 @@
     display: flex;
     align-items: center;
 }
+
+.post-categories, .post-meta {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.post-category {
+  background: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.8em;
+}

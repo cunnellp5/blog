@@ -4,16 +4,5 @@
 @import "{{ site.theme }}";
 @import "corrections";
 @import "notice";
-
-
-// THEMING
-// todo move below to new file when done
-.site-header {
-  position: sticky;
-  top:0;
-  border-top: none;
-}
-
-.site-footer, .site-header {
-  background: mintcream
-}
+@import "theme-override";
+@import "toc";

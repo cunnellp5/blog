@@ -3,7 +3,7 @@ layout: page
 title: Links
 permalink: /links/
 ---
-links id like to come back to
+dev links - liable to change
 
 - [squoosh](https://squoosh.app/)
 - [jsdelivr](https://www.jsdelivr.com/)
