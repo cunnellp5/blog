@@ -1,37 +1,17 @@
 ---
 ---
-@import "minima"; /* or whatever your theme name is */
 
-/* Your custom CSS here */
-.social-media-list > li > a {
-    display: flex;
-    align-items: center;
+@import "{{ site.theme }}";
+@import "notice";
+@import "minorCorrections";
+
+// todo move below to new file when settled
+.site-header {
+  position: sticky;
+  top:0;
+  border-top: none;
 }
 
-/* Custom Jekyll Info Box Style */
-.notice--info {
-  margin: 1.5em 0;
-  padding: 1em 1.25em;
-  background-color: #f0f7ff;
-  border-left: 4px solid #0066cc;
-  border-radius: 4px;
-  color: #1a365d;
-//   font-size: 0.95em;
-  font-style: normal;
-}
-
-/* Optional: Ensures paragraphs inside the block look great */
-.notice--info p {
-  margin: 0;
-  line-height: 1.5;
-  font-style: normal;
-}
-
-/* Optional: Colors any links inside the note to match the theme */
-.notice--info a {
-  color: #0066cc;
-  text-decoration: underline;
-}
-.notice--info a:hover {
-  color: #004499;
+.site-footer, .site-header {
+  background: mintcream
 }
