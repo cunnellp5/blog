@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-@import "minorCorrections";
+@use "{{ site.theme }}";
+@use "minorCorrections";
 
 // NOTICE
 
