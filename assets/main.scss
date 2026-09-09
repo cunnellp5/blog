@@ -2,8 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-@import "notice";
-@import "minorCorrections";
+@import "notice.scss";
+@import "minorCorrections.scss";
 
 // todo move below to new file when done
 .site-header {
