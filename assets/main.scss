@@ -2,9 +2,48 @@
 ---
 
 @import "{{ site.theme }}";
-@import "_notice";
-@import "_minorCorrections";
 
+// NOTICE
+
+$blue-color: "#0066cc";
+
+/* Custom Jekyll Info Box Style */
+.notice--info {
+  margin: 1.5em 0;
+  padding: 1em 1.25em;
+  background-color: #f0f7ff;
+  border-left: 4px solid $blue-color;
+  border-radius: 4px;
+  color: #1a365d;
+  font-style: normal;
+}
+
+/* Optional: Ensures paragraphs inside the block look great */
+.notice--info p {
+  margin: 0;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/* Optional: Colors any links inside the note to match the theme */
+.notice--info a {
+  color: $blue-color;
+  text-decoration: underline;
+}
+.notice--info a:hover {
+  color: #004499;
+}
+
+// MINOR CORRECTIONS
+
+// corrects footer icons not centered
+.social-media-list > li > a {
+    display: flex;
+    align-items: center;
+}
+
+
+// THEMING
 // todo move below to new file when done
 .site-header {
   position: sticky;
