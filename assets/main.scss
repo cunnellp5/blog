@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+@import "minorCorrections";
 
 // NOTICE
 
@@ -34,13 +35,13 @@ $blue-color: "#0066cc";
   color: #004499;
 }
 
-// MINOR CORRECTIONS
+// // MINOR CORRECTIONS
 
-// corrects footer icons not centered
-.social-media-list > li > a {
-    display: flex;
-    align-items: center;
-}
+// // corrects footer icons not centered
+// .social-media-list > li > a {
+//     display: flex;
+//     align-items: center;
+// }
 
 
 // THEMING
