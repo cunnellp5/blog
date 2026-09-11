@@ -11,8 +11,8 @@ Links
 [jsnews](https://denverscript.com/news/)
 
 
-Setups
+Gear
 
 **laptop**: 2015 macbook air + linux mint cinnamon OS\
-**desktop**: custom + omarchy + logitech k350 & m705\
+**desktop**: (~2020) custom build + omarchy + logitech k350 & m705\
 **skateboard**: 8.5 + indy hollow + raw 6s + pro nano cubic 97a 52mm
