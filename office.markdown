@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Office
+title: office
 permalink: /office/
 ---
 

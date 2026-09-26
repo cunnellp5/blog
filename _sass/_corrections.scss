@@ -1,12 +1,13 @@
 // corrects footer icons not centered
-.social-media-list > li > a {
-    display: flex;
-    align-items: center;
+.social-media-list>li>a {
+  display: flex;
+  align-items: center;
 }
 
-.post-categories, .post-meta {
+.post-categories,
+.post-meta {
   font-size: 0.85rem;
-  color: var(--color-muted);
+  // color: var(--color-muted);
 }
 
 .post-category {

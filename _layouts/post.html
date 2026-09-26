@@ -19,19 +19,19 @@ layout: default
         </p>
     </header>
 
-        {% if page.toc %}
-        {% assign h2_nodes = content | split: '<h2 id="' %}
+    {% if page.toc %}
+    {% assign h2_nodes = content | split: '<h2 id="' %}
         {% if h2_nodes.size > 1 %}
         <nav class=" table-of-contents">
-            <p class="toc-title">Table of Contents</p>
-            <ul>
-                {% for node in h2_nodes offset:1 %}
-                {% assign id = node | split: '"' | first %}
-                {% assign title = node | split: '</h2' | first | split: '>' | last | strip_html %} <li>
-                <a href="#{{ id }}">{{ title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
+        <p class="toc-title">Table of Contents</p>
+        <ul>
+            {% for node in h2_nodes offset:1 %}
+            {% assign id = node | split: '"' | first %}
+            {% assign title = node | split: '</h2' | first | split: '>' | last | strip_html %} <li>
+            <a href="#{{ id }}">{{ title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
         </nav>
         {% endif %}
         {% endif %}

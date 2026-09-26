@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
