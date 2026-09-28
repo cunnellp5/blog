@@ -7,6 +7,6 @@ permalink: /about/
 {% assign start_year = 2017 %}
 {% assign years_exp = current_year | minus: start_year %}
 
-hi im phil.\
-{{ years_exp }} years software developer. Full stack - frontend leaning.\
-More details in [resume](https://resume.philcunnell.dev/)
+im phil.\
+{{ years_exp }} years of software development.\
+Full stack - Front-End leaning. [[resume](https://resume.philcunnell.dev/)]
