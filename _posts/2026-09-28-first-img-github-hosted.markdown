@@ -13,4 +13,4 @@ Steps:
 3. save it to the root of the repo and push
 4. right click and open image in a new tab then use the url
 
-<img src="https://raw.githubusercontent.com/cunnellp5/images/refs/heads/main/reduced.jpg" width="1000">
+<img src="https://raw.githubusercontent.com/cunnellp5/images/refs/heads/main/reduced.jpg?token=GHSAT0AAAAAAEJBFLAFWP2ZH7LIS447UYNG2V2CEIA" width="1000">
